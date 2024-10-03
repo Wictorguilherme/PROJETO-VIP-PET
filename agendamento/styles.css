@@ -1,0 +1,169 @@
+
+:root {
+    --cor-principal: #ECE3CE;
+    --cor-secundaria: #739072;
+    --cor-terciaria: #3d7e64;
+    --cor-hover: #002400;
+    --cor-6: #3a4539;
+    --cor-7:#88d3ab;
+
+
+    --font-principal: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat, sans-serif';
+     }
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+fieldset{
+    border: 1;
+    margin: 1%; 
+    margin-left: 5%;
+    border-radius: 1em;
+    border-color: var(--cor-hover)
+   
+    
+}
+
+body{
+    display:block;
+    padding: 1% 0% 0% 1%;
+    width: 50%;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    font-size:1rem;
+    margin-top: 1%;
+    margin: 0%;
+    justify-content: space-between;
+    align-items:end;
+    align-content: end;
+    
+      
+}
+.Cabecalho{
+   flex-direction:row;
+   font-size: 1rem;
+   color: var(--cor-terciaria);
+   padding: 2% 0 0 2%;
+   margin: 3%;
+}
+
+.corpo{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 2%;
+    gap: 40%;
+}
+.confirmado{
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    top: 0%;
+    left: 30rem;
+    align-items: center;
+    margin-top: 0%;
+    margin-block: 10%;
+    
+}
+
+.img{
+
+    margin-right: 22em;
+    height: 36rem;
+    width:36rem;
+    
+    animation: anime 1.2s infinite;
+}
+@keyframes anime {
+    50% {
+        transform: translateY(10%);
+    }
+
+}
+
+.grupo:before, .grupo:after {
+    display: table;
+}
+.grupo:after {
+    clear: both;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+    margin: 0.2%;
+}
+.campo{
+    border: 1em;
+    margin: 1%;
+}
+.campo label{
+    margin-bottom: 0.2em;
+    color: var(--cor-terciaria);
+    display: inline-flex;
+   
+}
+label{
+    font-size: 1rem;
+    
+}
+fieldset.grupo .campo{
+    float:  left;
+    margin-right: 4rem;
+   
+}
+legend{
+    color: var(--cor-terciaria);
+    font-size: 1rem;
+    padding: 1em;
+    font-style: oblique;
+}
+
+input:focus, select:focus, textarea:focus{
+background: var(--cor-7);
+}
+#Mensagem{
+    resize: none;
+    width: 50rem;
+    margin: 1%;
+    
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="date" ], input[type="time"], input[type="number"], select, textarea{
+    padding: 0.2em;
+    border: 1px solid var(--cor-secundaria);
+    box-shadow: 2px 2px 2px 2px var(--cor-terciaria);
+    font-size: 1rem;
+    justify-content: space-around;
+}
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: var(--cor-terciaria);
+}
+select{
+    padding-right: 1em;
+}
+button{
+    display: inline;
+    border: 0;
+    margin: 10%;
+    border-radius: 24px;
+    margin-bottom: 2em ;
+    padding: 0.2em 0.6em;
+    margin-right: 10%;
+    font-size: 1.2rem;
+    width: 13rem;
+    height: 4rem;
+    color: var(--cor-principal);
+    text-shadow: 1px 1px 1px 1px var(--cor-7);
+    background-color: var(--cor-secundaria);
+    box-shadow: 2px 2px 2px 2px var(--cor-6)
+}
+button, select{
+    cursor: pointer;
+} 
+

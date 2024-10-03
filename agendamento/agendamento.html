@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+        <title>Agende sua Consulta</title>
+        <link  rel="shortcut icon" href="./imgs agendamento/paw_672716.png">
+
+    </head>
+    <body>
+        <script src="script.js"></script>
+
+        <header class="Cabecalho">
+            <div>
+            <img src="./imgs agendamento/paw_672716.png" alt="Patinha Pet" width="30px" >
+            </div>
+            <h1>Bem vindos a VIP PET!</h1> 
+            
+            <h2><strong>  Agende o banho do seu amigo conosco!</strong>  <h2>
+            
+        </header>
+        <main class="corpo">
+            <form action="formulario-enviado.html"> 
+
+                <fieldset class="dados__tutor">
+                    <legend> Dados do Tutor</legend>
+                    <div>
+                        <label> Nome</label>
+                        <input type="text" name="Nome" id="Nome" required/>
+                        <label> Sobrenome</label>
+                        <input type="text" name="Sobrenome" id="Sobrenome" required/>
+                    
+                    <div>
+                        <label>E-mail</label>
+                        <input type="email" name="email" id="email" required/>
+                        </div><div>
+                        <input type="checkbox" id="news" name="novidades" value="newsletter"><label for="newsletter">Desejo receber ofertas especiais por e-mail.</label>
+                        
+                    </div>
+                    <div>
+                        <label>Telefone</label>
+                        <input type="tel" placeholder="(XX)9XXXX-XXXX" required>
+
+                    </div>
+                </fieldset>
+                <fieldset class="dados__pet">
+                    <legend> Dados do PET</legend>
+                    <div>
+                        <label> Nome</label>
+                        <input type="text" name="Nome" id="Nome"/>
+                    </div>
+                    
+                    <label>Idade</label>
+                    <input type="number" name="age" id="idade" max="200" min="0"/>
+                    <label> Espécie</label>
+                    <select id="especie" name="especie">
+                        <option selected disabled value="">Selecione</option>
+                    <option>Cão</option>
+                    <option>Gato</option>
+                    </select>
+
+                    </fieldset>
+                    <fieldset class="hora">
+                    <legend> Agende seu Horário</legend>
+                    <label fot="input-data">Data</label>
+                    <input id="input-data" type="date" name="data"/>
+                    <label fot="input-hota">Hora</label>
+                    <input id="input-hora" type="time" name="hora"/>
+
+                    </fieldset>
+
+                <fieldset class="mensagem">
+                    <legend> Mensagem</legend>
+                    <textarea id="Mensagem" name="Mensagem" rows="20" placeholder="Descreva se o seu amigo tem algum problema de saúde ou alergias."></textarea>
+
+                    </textarea>
+
+                </fieldset>
+
+                
+                    <button type="submit">
+                        <a href="./formularioEnviado.html">Enviar</a>
+                    </button>
+                </a>
+                <button type="reset">Limpar</button>
+            </form>
+            <img src="./imgs agendamento/seupet.png"   class="img"/>
+        </main>
+                
+    </body>
+    
+    
+</html>

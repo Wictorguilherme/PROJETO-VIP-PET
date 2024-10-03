@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.container-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: gray;
+
+}
+
+.menu>a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 15px;
+
+}
+
+.logo>.logo-1 {
+    color: rgb(0, 0, 0);
+}
+
+.logo>.logo-2 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/*seção de apresentação*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    text-align: center;
+}
+
+.container>h1 {
+    color: rgb(66, 64, 64);
+    font-size: 40px;
+    font-weight: 300;   
+}
+
+.container>p {
+    color: rgb(66, 64, 64);
+    font-size: 20px;
+    font-weight: 100%;
+}
+
+.container>img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/*seção de quem somos*/
+.container-conteudo {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 5%;
+    gap: 4%;
+}
+
+.container-conteudo>img {
+    width: 50%;  
+}
+
+.conteudo>h2 {
+    color: rgb(66, 64, 64);
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.conteudo>p {
+    color: rgb(66, 64, 64);
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 35px;
+    margin-top: 30px;
+}
+
+.conteudo>.btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+/*seção de contato*/
+.conteudo-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*seção de rodapé (footer)*/
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    margin-top: 20px;
+    background-color: gray;
+}
+
+footer>nav>a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: rgb(66, 64, 64);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer>p {
+    color: rgb(66,64,64, 0.5);
+    margin-top: 20px;
+}
+
+/*seção do botão*/
